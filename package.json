@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently \"cd app && npm run dev\" \"cd server && npm run dev\"",
     "build": "concurrently \"cd app && npm run build\" \"cd server && npm run build\"",
-    "serve": "npm run build && node server/dist/index.js"
+    "serve": "npm run build && node server/dist/index.js",
+    "install:all": "concurrently \"cd app && npm install\" \"cd server && npm install\""
   },
   "keywords": [],
   "author": "",
