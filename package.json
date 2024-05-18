@@ -1,0 +1,17 @@
+{
+  "name": "ai-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd app && npm run dev\" \"cd server && npm run dev\"",
+    "build": "concurrently \"cd app && npm run build\" \"cd server && npm run build\"",
+    "serve": "npm run build && node server/dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
